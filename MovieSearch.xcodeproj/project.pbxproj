@@ -32,10 +32,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58F19E9C2E1FCCD600448FC2 = {
+		584BF2162E1FD712008A5575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				58F19EB62E1FD1AF00448FC2 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58F19E9C2E1FCCD600448FC2 = {
+			isa = PBXGroup;
+			children = (
 				58F19EA72E1FCCD600448FC2 /* MovieSearch */,
 				58F19EA62E1FCCD600448FC2 /* Products */,
 			);
@@ -52,6 +59,7 @@
 		58F19EA72E1FCCD600448FC2 /* MovieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				584BF2162E1FD712008A5575 /* Model */,
 				58F19EA82E1FCCD600448FC2 /* MovieSearchApp.swift */,
 				58F19EAC2E1FCCDF00448FC2 /* Assets.xcassets */,
 				58F19EAE2E1FCCDF00448FC2 /* Preview Content */,
