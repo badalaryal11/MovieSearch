@@ -9,7 +9,25 @@ import CoreData
 import Foundation
 
 // A singleton class to manage all Core Data operations for caching and favorites.
-class CoreDataService {
+class CoreDataService: CoreDataServiceProtocol {
+    // initializer for testing 
+    init(inMemory: Bool = false) {
+           persistentContainer = NSPersistentContainer(name: "MovieAppCache")
+           
+           if inMemory {
+               // Use an in-memory store for unit tests to keep them isolated and fast.
+               let description = NSPersistentStoreDescription()
+               description.url = URL(fileURLWithPath: "/dev/null")
+               persistentContainer.persistentStoreDescriptions = [description]
+           }
+           
+           persistentContainer.loadPersistentStores { (storeDescription, error) in
+               if let error = error as NSError? {
+                   fatalError("Unresolved error \(error), \(error.userInfo)")
+               }
+           }
+           persistentContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+       }
     static let shared = CoreDataService()
     let persistentContainer: NSPersistentContainer
     

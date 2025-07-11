@@ -23,12 +23,18 @@ class MovieViewModel: ObservableObject {
     // MARK: - Private Properties
     private var currentPage = 1
     private var totalPages = 1
-    private let apiService = APIService()
-    private let coreDataService = CoreDataService.shared
-
-    init() {
-        loadFavorites()
-    }
+    //private let apiService = APIService()
+   // private let coreDataService = CoreDataService.shared
+    // Use of created protocol
+    private let coreDataService: CoreDataServiceProtocol
+    private let apiService: APIService
+    
+    // initializers to accept the services
+    init(apiService: APIService = APIService(), coreDataService: CoreDataServiceProtocol = CoreDataService.shared) {
+           self.apiService = apiService
+           self.coreDataService = coreDataService
+           loadFavorites()
+       }
 
     // MARK: - Public Methods
     
