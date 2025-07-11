@@ -16,6 +16,7 @@
 		588590CB2E20F15D00E2A523 /* MovieSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */; };
 		588590D12E20F17400E2A523 /* MockCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590BE2E20EC9300E2A523 /* MockCoreDataService.swift */; };
 		588590D22E20F17A00E2A523 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */; };
+		588590D42E20F96A00E2A523 /* MovieViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590D32E20F96900E2A523 /* MovieViewModelTests.swift */; };
 		58F19EA92E1FCCD600448FC2 /* MovieSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F19EA82E1FCCD600448FC2 /* MovieSearchApp.swift */; };
 		58F19EAD2E1FCCDF00448FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F19EAC2E1FCCDF00448FC2 /* Assets.xcassets */; };
 		58F19EB02E1FCCDF00448FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F19EAF2E1FCCDF00448FC2 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataServiceTests.swift; path = /Users/badalaryal/Desktop/Assignment_iOS/MovieSearch/MovieSearchTests/CoreDataServiceTests.swift; sourceTree = "<absolute>"; };
 		588590C82E20F15D00E2A523 /* MovieSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTests.swift; sourceTree = "<group>"; };
+		588590D32E20F96900E2A523 /* MovieViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelTests.swift; sourceTree = "<group>"; };
 		58F19EA52E1FCCD600448FC2 /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F19EA82E1FCCD600448FC2 /* MovieSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchApp.swift; sourceTree = "<group>"; };
 		58F19EAC2E1FCCDF00448FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */,
 				588590BE2E20EC9300E2A523 /* MockCoreDataService.swift */,
 				588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */,
+				588590D32E20F96900E2A523 /* MovieViewModelTests.swift */,
 			);
 			path = MovieSearchTests;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				588590D22E20F17A00E2A523 /* CoreDataServiceTests.swift in Sources */,
 				588590D12E20F17400E2A523 /* MockCoreDataService.swift in Sources */,
 				588590CB2E20F15D00E2A523 /* MovieSearchTests.swift in Sources */,
+				588590D42E20F96A00E2A523 /* MovieViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
