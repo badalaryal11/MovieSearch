@@ -15,7 +15,8 @@ struct MovieListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(text: $viewModel.searchQuery, onSearchButtonClicked: viewModel.searchMovies)
+                SearchBar(text: $viewModel.searchQuery, onSearchButtonClicked: viewModel.searchMovies).accessibilityIdentifier("searchBar")
+
                 
                 if viewModel.movies.isEmpty && !viewModel.isLoading {
                     // Show a message when there are no results
@@ -36,7 +37,8 @@ struct MovieListView: View {
                                     }
                                 }
                         }
-                    }
+                    }.accessibilityIdentifier("movieList")
+                    
                 }
 
                 // Show a loading indicator while fetching data.
@@ -52,6 +54,8 @@ struct MovieListView: View {
                     NavigationLink(destination: FavoritesView(viewModel: viewModel)) {
                         Image(systemName: "heart.fill")
                     }
+                    .accessibilityIdentifier("favoritesLink")
+                                    
                 }
             }
             // Alert to show any errors that occur.
@@ -89,7 +93,7 @@ struct MovieRow: View {
                 Text("Released: \(movie.releaseDate ?? "N/A")")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
-            }
+            }.accessibilityIdentifier("favoriteButton") 
         }
         .padding(.vertical, 4)
     }
