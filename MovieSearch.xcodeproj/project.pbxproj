@@ -13,11 +13,24 @@
 		584BF2232E1FF2CA008A5575 /* MovieAppCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 584BF2212E1FF2CA008A5575 /* MovieAppCache.xcdatamodeld */; };
 		584BF2252E1FF4D9008A5575 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF2242E1FF4D9008A5575 /* CoreDataService.swift */; };
 		584BF22A2E20E16D008A5575 /* CoreDataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BF2292E20E16D008A5575 /* CoreDataServiceProtocol.swift */; };
+		588590CB2E20F15D00E2A523 /* MovieSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */; };
+		588590D12E20F17400E2A523 /* MockCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590BE2E20EC9300E2A523 /* MockCoreDataService.swift */; };
+		588590D22E20F17A00E2A523 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */; };
 		58F19EA92E1FCCD600448FC2 /* MovieSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F19EA82E1FCCD600448FC2 /* MovieSearchApp.swift */; };
 		58F19EAD2E1FCCDF00448FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F19EAC2E1FCCDF00448FC2 /* Assets.xcassets */; };
 		58F19EB02E1FCCDF00448FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F19EAF2E1FCCDF00448FC2 /* Preview Assets.xcassets */; };
 		58F19EB72E1FD1AF00448FC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F19EB62E1FD1AF00448FC2 /* Model.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		588590CC2E20F15D00E2A523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58F19E9D2E1FCCD600448FC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58F19EA42E1FCCD600448FC2;
+			remoteInfo = MovieSearch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		584BF2182E1FD7C3008A5575 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
@@ -27,6 +40,10 @@
 		584BF2242E1FF4D9008A5575 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		584BF2282E203929008A5575 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		584BF2292E20E16D008A5575 /* CoreDataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceProtocol.swift; sourceTree = "<group>"; };
+		588590BE2E20EC9300E2A523 /* MockCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataService.swift; sourceTree = "<group>"; };
+		588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataServiceTests.swift; path = /Users/badalaryal/Desktop/Assignment_iOS/MovieSearch/MovieSearchTests/CoreDataServiceTests.swift; sourceTree = "<absolute>"; };
+		588590C82E20F15D00E2A523 /* MovieSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTests.swift; sourceTree = "<group>"; };
 		58F19EA52E1FCCD600448FC2 /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F19EA82E1FCCD600448FC2 /* MovieSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchApp.swift; sourceTree = "<group>"; };
 		58F19EAC2E1FCCDF00448FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		588590C52E20F15D00E2A523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58F19EA22E1FCCD600448FC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,10 +110,21 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		588590C92E20F15D00E2A523 /* MovieSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				588590C02E20ED6500E2A523 /* CoreDataServiceTests.swift */,
+				588590BE2E20EC9300E2A523 /* MockCoreDataService.swift */,
+				588590CA2E20F15D00E2A523 /* MovieSearchTests.swift */,
+			);
+			path = MovieSearchTests;
+			sourceTree = "<group>";
+		};
 		58F19E9C2E1FCCD600448FC2 = {
 			isa = PBXGroup;
 			children = (
 				58F19EA72E1FCCD600448FC2 /* MovieSearch */,
+				588590C92E20F15D00E2A523 /* MovieSearchTests */,
 				58F19EA62E1FCCD600448FC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				58F19EA52E1FCCD600448FC2 /* MovieSearch.app */,
+				588590C82E20F15D00E2A523 /* MovieSearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +166,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		588590C72E20F15D00E2A523 /* MovieSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 588590CE2E20F15D00E2A523 /* Build configuration list for PBXNativeTarget "MovieSearchTests" */;
+			buildPhases = (
+				588590C42E20F15D00E2A523 /* Sources */,
+				588590C52E20F15D00E2A523 /* Frameworks */,
+				588590C62E20F15D00E2A523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				588590CD2E20F15D00E2A523 /* PBXTargetDependency */,
+			);
+			name = MovieSearchTests;
+			productName = MovieSearchTests;
+			productReference = 588590C82E20F15D00E2A523 /* MovieSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		58F19EA42E1FCCD600448FC2 /* MovieSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58F19EB32E1FCCDF00448FC2 /* Build configuration list for PBXNativeTarget "MovieSearch" */;
@@ -157,6 +211,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					588590C72E20F15D00E2A523 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 58F19EA42E1FCCD600448FC2;
+					};
 					58F19EA42E1FCCD600448FC2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -176,11 +234,19 @@
 			projectRoot = "";
 			targets = (
 				58F19EA42E1FCCD600448FC2 /* MovieSearch */,
+				588590C72E20F15D00E2A523 /* MovieSearchTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		588590C62E20F15D00E2A523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58F19EA32E1FCCD600448FC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +259,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		588590C42E20F15D00E2A523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588590D22E20F17A00E2A523 /* CoreDataServiceTests.swift in Sources */,
+				588590D12E20F17400E2A523 /* MockCoreDataService.swift in Sources */,
+				588590CB2E20F15D00E2A523 /* MovieSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58F19EA12E1FCCD600448FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,7 +286,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		588590CD2E20F15D00E2A523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58F19EA42E1FCCD600448FC2 /* MovieSearch */;
+			targetProxy = 588590CC2E20F15D00E2A523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		588590CF2E20F15D00E2A523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZDML3UK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = badalaryal.MovieSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieSearch";
+			};
+			name = Debug;
+		};
+		588590D02E20F15D00E2A523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NZDML3UK3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = badalaryal.MovieSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieSearch";
+			};
+			name = Release;
+		};
 		58F19EB12E1FCCDF00448FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		588590CE2E20F15D00E2A523 /* Build configuration list for PBXNativeTarget "MovieSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				588590CF2E20F15D00E2A523 /* Debug */,
+				588590D02E20F15D00E2A523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58F19EA02E1FCCD600448FC2 /* Build configuration list for PBXProject "MovieSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
