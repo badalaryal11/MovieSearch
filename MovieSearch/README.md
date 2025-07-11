@@ -1,6 +1,8 @@
 TMDb Movie Search iOS App
 This is a modern iOS application built with SwiftUI that allows users to search for movies using The Movie Database (TMDb) API. It demonstrates best practices in iOS development, including the MVVM architecture, offline caching with Core Data, and a comprehensive suite of unit and UI tests.
-
+ 
+ Github URL: https://github.com/badalaryal11/MovieSearch.git
+ 
 Features
 1. Movie Search: Search for movies by title using the TMDb API.
 
